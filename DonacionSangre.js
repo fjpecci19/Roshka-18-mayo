@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#miFormulario').submit(function(event) {
+    $('#botoncinho').click(function(event) {
       event.preventDefault()
       
       var telefono = $('#telefono').val()
@@ -16,7 +16,7 @@ $(document).ready(function() {
       console.log('Volumenes:', vol)
       console.log('Fecha límite:', fecha)
 
-      $('#miFormulario')[0].reset()
+      
     })
 
     $("#botoncinho").click(function(){
