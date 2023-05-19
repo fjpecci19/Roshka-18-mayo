@@ -1,10 +1,25 @@
-let peticion = {}
-$.ajax({
-    dataType: "json",
-    async:false,
-    url: "http://192.168.16.90:8000/api/solicitudes",
-    success: function(result) {
-        peticion = result.data
-    }
+$(document).ready(function() {
+    $('#miFormulario').submit(function(event) {
+      event.preventDefault()
+      
+      var telefono = $('#telefono').val()
+      var ci = $('#ci').val()
+      var lugar = $('#lugar').val()
+      var rh = $('#rh').val()
+      var vol = $('#vol').val()
+      var fecha = $('#fecha').val()
+      
+      console.log('Telefono:', telefono)
+      console.log('CI:', ci)
+      console.log('Lugar:', lugar)
+      console.log('RH:', rh)
+      console.log('Volumenes:', vol)
+      console.log('Fecha límite:', fecha)
+
+      $('#miFormulario')[0].reset()
+    })
 })
-console.log(peticion)
+
+$(document).ready(function(){
+    
+})
