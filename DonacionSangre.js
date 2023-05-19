@@ -16,7 +16,7 @@ $(document).ready(function() {
       console.log('Volumenes:', vol)
       console.log('Fecha límite:', fecha)
 
-      
+      $('#miFormulario')[0].reset();
     })
 
     $("#botoncinho").click(function(){
