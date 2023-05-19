@@ -18,8 +18,14 @@ $(document).ready(function() {
 
       $('#miFormulario')[0].reset()
     })
+
+    $("#botoncinho").click(function(){
+        $.get("http://192.168.16.90:8000/api/solicitudes", function(data, status){
+            console.log(data)
+        })
+    })
 })
 
-$(botoncinho).click(function(){
-    $.get("")
-})
+function crearcarta(record){
+    let carta = ""
+}
