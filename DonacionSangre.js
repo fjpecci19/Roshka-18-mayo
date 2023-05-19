@@ -25,8 +25,7 @@ $(document).ready(function(){
                 <div class="container py-1"
                     style="background-color: white; width: 200px; height: 360px; border-radius: 10px;">
                     <h2 style="font-size: 15px; text-align: left;">
-                        ${data.data[index].nombre_apellido_donatario}<img id="basurero" type="img" style="float: right; font-size: 12px;"
-                            value="➙"></img><img id="flecha" type="img" style="float: right; font-size: 12px;" value="🗑️"></img>
+                        ${data.data[index].nombre_apellido_donatario}<text style="float: right; font-size: 12px;">➙</text><text style="float: right; font-size: 12px;">🗑️</text>
                     </h2>
                     <h2 style="font-size: 10px; text-align: left;">
                         <label for="telefono" style="font-size: 10px; color: 1px solid black;">Teléfono:</label>
