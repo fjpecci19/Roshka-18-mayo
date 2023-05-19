@@ -20,6 +20,6 @@ $(document).ready(function() {
     })
 })
 
-$(document).ready(function(){
-    
+$(botoncinho).click(function(){
+    $.get("")
 })
